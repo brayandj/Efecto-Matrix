@@ -60,9 +60,15 @@ class Lightning {
 
   draw(context) {
     const gradient = context.createLinearGradient(this.start.x, this.start.y, this.end.x, this.end.y);
-    gradient.addColorStop(0, 'rgba(255, 255, 255, 0)');
-    gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0.8)');
-    gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+    // gradient.addColorStop(0, 'rgba(255, 255, 255, 0)');
+    // gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0.8)');
+    // gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+    
+    gradient.addColorStop(0, 'rgba(0, 255, 0, 0)');
+    gradient.addColorStop(0.2, 'rgba(0, 255, 0, 1)');
+    gradient.addColorStop(0.4, 'rgba(255, 255, 255, 1)');
+    gradient.addColorStop(0.6, 'rgba(0, 255, 0, 1)');
+    gradient.addColorStop(1, 'rgba(0, 255, 0, 0)');
 
     context.strokeStyle = gradient;
     context.lineWidth = 2;
